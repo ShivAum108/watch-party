@@ -13,6 +13,7 @@ app.get("/health", (_req, res) => {
   res.json({ ok: true, message: "Watch party server is running" });
 });
 
+
 const server = http.createServer(app);
 
 const io = new Server(server, {
